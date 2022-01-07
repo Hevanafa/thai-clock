@@ -1,0 +1,27 @@
+﻿<Window x:Class="ThaiClock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThaiClock"
+        mc:Ignorable="d"
+        Title="Thai Clock - by Hevanafa (Jan 2022)" Height="329" Width="606" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+
+        <Image x:Name="by_Husun_Wei_cropped_jpg" Margin="0" Source="by Husun Wei_cropped.jpg" Stretch="Fill" Width="600" Height="300"/>
+        <TextBlock x:Name="txbSentence_Copy" TextWrapping="Wrap" Background="#FFBFBFBF" Margin="220,40,20,40">
+            <TextBlock.Effect>
+                <BlurEffect KernelType="Box"/>
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <Label x:Name="lblClock" Content="00:00" HorizontalAlignment="Left" Margin="20,40,0,0" VerticalAlignment="Top" FontSize="36" HorizontalContentAlignment="Center" Height="90" Width="180" VerticalContentAlignment="Center">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0" Opacity="1" Color="Gray" />
+            </Label.Effect>
+        </Label>
+        <TextBlock x:Name="txbSentence" TextWrapping="Wrap" Margin="220,40,20,40"/>
+        <Button x:Name="btnVisibility" Content="👁" HorizontalAlignment="Left" Height="40" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="40" FontSize="16" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" Click="btnVisibility_Click"/>
+
+    </Grid>
+</Window>
